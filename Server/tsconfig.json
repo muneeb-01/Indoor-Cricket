@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    
+    // --- Module/Target Configuration ---
+    "module": "commonjs", 
+    "target": "es2020", // Upgraded to a modern target for better performance/features
+    "esModuleInterop": true, 
+    "allowSyntheticDefaultImports": true, // Keeps your 'import express from "express"' style
+
+    // --- Strictness and Safety ---
+    "strict": true,
+    "noUncheckedIndexedAccess": true, 
+    "exactOptionalPropertyTypes": true, 
+    "noUncheckedSideEffectImports": true,
+    "skipLibCheck": true, // Recommended for faster compilation
+
+    // --- Build Output Settings ---
+    "sourceMap": true, 
+    "declaration": true, 
+    "declarationMap": true, 
+
+    // --- Conflicting/Unnecessary Options Removed/Modified ---
+    // "jsx": "react-jsx", // Only needed if you are processing JSX (e.g., using React on the server)
+    
+    // These options often conflict with 'esModuleInterop' and CommonJS modules.
+    // They are usually intended for browser-only, bundling, or highly strict library setups.
+    // "verbatimModuleSyntax": true,
+    // "isolatedModules": true, 
+    // "moduleDetection": "force", 
+
+    "types": [] // Keeping this empty is generally fine, but note it disables all default global types.
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
