@@ -34,7 +34,8 @@ class _InitScreenState extends State<InitScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: pages[currentSelectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar:
+      BottomNavigationBar(
         onTap: updateCurrentIndex,
         currentIndex: currentSelectedIndex,
         showSelectedLabels: false,
@@ -50,7 +51,7 @@ class _InitScreenState extends State<InitScreen> {
               ),
             ),
             activeIcon: SvgPicture.asset(
-              "assets/icons/Shop Icon.svg",
+              "assets/icons/Shop_Icon.svg",
               colorFilter: const ColorFilter.mode(
                 kPrimaryColor,
                 BlendMode.srcIn,
@@ -60,7 +61,7 @@ class _InitScreenState extends State<InitScreen> {
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              "assets/icons/Heart Icon.svg",
+              "assets/icons/Heart_Icon.svg",
               colorFilter: const ColorFilter.mode(
                 inActiveIconColor,
                 BlendMode.srcIn,
@@ -75,40 +76,40 @@ class _InitScreenState extends State<InitScreen> {
             ),
             label: "Fav",
           ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              "assets/icons/Chat bubble Icon.svg",
-              colorFilter: const ColorFilter.mode(
-                inActiveIconColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            activeIcon: SvgPicture.asset(
-              "assets/icons/Chat bubble Icon.svg",
-              colorFilter: const ColorFilter.mode(
-                kPrimaryColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            label: "Chat",
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              "assets/icons/User Icon.svg",
-              colorFilter: const ColorFilter.mode(
-                inActiveIconColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            activeIcon: SvgPicture.asset(
-              "assets/icons/User Icon.svg",
-              colorFilter: const ColorFilter.mode(
-                kPrimaryColor,
-                BlendMode.srcIn,
-              ),
-            ),
-            label: "Fav",
-          ),
+          // BottomNavigationBarItem(
+          //   icon: SvgPicture.asset(
+          //     "assets/icons/Chat_bubble_Icon.svg",
+          //     colorFilter: const ColorFilter.mode(
+          //       inActiveIconColor,
+          //       BlendMode.srcIn,
+          //     ),
+          //   ),
+          //   activeIcon: SvgPicture.asset(
+          //     "assets/icons/Chat bubble Icon.svg",
+          //     colorFilter: const ColorFilter.mode(
+          //       kPrimaryColor,
+          //       BlendMode.srcIn,
+          //     ),
+          //   ),
+          //   label: "Chat",
+          // ),
+          // BottomNavigationBarItem(
+          //   icon: SvgPicture.asset(
+          //     "assets/icons/User_Icon.svg",
+          //     colorFilter: const ColorFilter.mode(
+          //       inActiveIconColor,
+          //       BlendMode.srcIn,
+          //     ),
+          //   ),
+          //   activeIcon: SvgPicture.asset(
+          //     "assets/icons/User Icon.svg",
+          //     colorFilter: const ColorFilter.mode(
+          //       kPrimaryColor,
+          //       BlendMode.srcIn,
+          //     ),
+          //   ),
+          //   label: "Fav",
+          // ),
         ],
       ),
     );

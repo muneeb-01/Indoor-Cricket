@@ -26,7 +26,6 @@ class SignInScreen extends StatelessWidget {
                   const Text(
                     "Welcome Back",
                     style: TextStyle(
-                      color: Colors.black,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
@@ -42,11 +41,11 @@ class SignInScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SocalCard(
-                        icon: "assets/icons/google-icon.svg",
+                        icon: "assets/icons/google_icon.svg",
                         press: () {},
                       ),
                       SocalCard(
-                        icon: "assets/icons/facebook-2.svg",
+                        icon: "assets/icons/facebook.svg",
                         press: () {},
                       ),
                       SocalCard(
